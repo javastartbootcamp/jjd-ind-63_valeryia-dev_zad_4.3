@@ -34,4 +34,16 @@ public class Triangle {
     public void setC(double c) {
         this.c = c;
     }
+
+    public void calculatePerimeter(Triangle triangle) { // jak zrobic z typem double
+        double a = triangle.getA();
+        double b = triangle.getB();
+        double c = triangle.getC();
+        if ((a + b > c) && (b + c > a) && (a + c > b)) {
+            System.out.println("trójkąt istnieje");
+            System.out.println(a + b + c);
+        } else {
+            System.out.println("trójkąt nie istnieje");
+        }
+    }
 }

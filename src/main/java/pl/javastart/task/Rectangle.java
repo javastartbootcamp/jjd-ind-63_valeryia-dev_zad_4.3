@@ -13,6 +13,10 @@ public class Rectangle {
         return a;
     }
 
+    public double calculateRectPerimeter(Rectangle rectangle) {
+        return ((rectangle.getA() + rectangle.getB()) / 2);
+    }
+
     public void setA(double a) {
         this.a = a;
     }

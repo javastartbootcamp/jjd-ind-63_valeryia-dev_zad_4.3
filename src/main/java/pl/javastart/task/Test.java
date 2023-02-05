@@ -2,14 +2,19 @@ package pl.javastart.task;
 
 public class Test {
     public static void main(String[] args) {
-        ShapeCalculator calculate = new ShapeCalculator();
+
         Circle circle = new Circle(10);
-        System.out.println(calculate.calculateCircleArea(circle));
+        double circleArea = circle.calculateArea(circle);
+        System.out.println(circleArea);
+
         Rectangle rectangle = new Rectangle(11, 20);
-        System.out.println(calculate.calculateRectPerimeter(rectangle));
+        double rectanglePerimeter = rectangle.calculateRectPerimeter(rectangle);
+
         Triangle triangle = new Triangle(23, 17, 39);
-        calculate.calculateTrianglePerimeter(triangle);
+        triangle.calculatePerimeter(triangle);
+
         Square square = new Square(5);
-        System.out.println(calculate.calculateSquareArea(square));
+        double squarePerimeter = square.calculateArea(square);
+        System.out.print(squarePerimeter);
     }
 }

@@ -14,4 +14,9 @@ public class Circle {
     public void setR(double r) {
         this.r = r;
     }
+
+    public double calculateArea(Circle circle) {
+        return Math.PI * Math.sqrt(circle.getR());
+    }
+
 }
