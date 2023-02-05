@@ -1,0 +1,22 @@
+package pl.javastart.task;
+
+public class Circle {
+    private double r;
+
+    public Circle(double r) {
+        this.r = r;
+    }
+
+    public double getR() {
+        return r;
+    }
+
+    public void setR(double r) {
+        this.r = r;
+    }
+
+    public double calculateArea(Circle circle) {
+        return Math.PI * Math.sqrt(circle.getR());
+    }
+
+}
